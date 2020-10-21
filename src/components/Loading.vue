@@ -7,29 +7,29 @@
 </template>
 
 <script>
-export default{
+export default {
   data () {
     return {
       loading: false
-    };
+    }
   },
   beforeDestroy () {
-    this.$root.Bus.$off('openLoading', this.openLoading);
-    this.$root.Bus.$off('closeLoading', this.closeLoading);
+    this.$root.Bus.$off('openLoading', this.openLoading)
+    this.$root.Bus.$off('closeLoading', this.closeLoading)
   },
   mounted () {
-    this.$root.Bus.$on('openLoading', this.openLoading);
-    this.$root.Bus.$on('closeLoading', this.closeLoading);
+    this.$root.Bus.$on('openLoading', this.openLoading)
+    this.$root.Bus.$on('closeLoading', this.closeLoading)
   },
   methods: {
     openLoading () {
-      this.loading = true;
+      this.loading = true
     },
     closeLoading () {
-      this.loading = false;
+      this.loading = false
     }
   }
-};
+}
 </script>
 
 <style>

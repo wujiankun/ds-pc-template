@@ -1,9 +1,11 @@
 {
-  "name": "{{name}}",
+  "name": "pc-template",
   "version": "0.1.0",
-  "description": "{{description}}",
+  "description": "template of pc",
   "private": true,
-  "author": "{{author}}",
+  "author": "wjk",
+  "channel": "answers.channel",
+  "cmsId": "answers.cmsId",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -40,5 +42,11 @@
     "sass": "^1.25.0",
     "sass-loader": "^8.0.2",
     "vue-template-compiler": "^2.6.11"
-  }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "ie > 8"
+  ]
 }

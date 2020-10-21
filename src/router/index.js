@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Loading from '@/components/Loading'
 import Home from '@/views/Home/Home'
-import Login from '@/views/Login/Login'
+// import Login from '@/views/Login/Login'
 import Main from '@/views/Main/Main'
 
 import User from '@/views/System/user'
@@ -77,9 +77,9 @@ const router = new Router({
     },
     {
       path: '/',
-      name: 'Login',
+      name: 'Home',
       components: {
-        default: Login
+        default: Home
       }
       // component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
     }

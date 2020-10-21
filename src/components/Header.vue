@@ -9,28 +9,28 @@
 </template>
 
 <script>
-  import {logout} from '@/services/LoginService';
+import { logout } from '@/services/LoginService'
 
-  export default {
-    data () {
-      return {
-        name: localStorage.getItem('siteName')
-      };
-    },
-    methods: {
-      logoutPro () {
-        logout().then(res => {
-          if (!res) return;
-          if (res.code === 0) {
-            this.$router.push('/');
-            localStorage.removeItem('Authorization');
-          } else {
-            this.$message.error(res.msg);
-          }
-        });
-      }
+export default {
+  data () {
+    return {
+      name: localStorage.getItem('siteName')
     }
-  };
+  },
+  methods: {
+    logoutPro () {
+      logout().then(res => {
+        if (!res) return
+        if (res.code === 0) {
+          this.$router.push('/')
+          localStorage.removeItem('Authorization')
+        } else {
+          this.$message.error(res.msg)
+        }
+      })
+    }
+  }
+}
 </script>
 
 <style lang="scss">

@@ -29,29 +29,29 @@
 </template>
 
 <script>
-  import {menuList} from '@/services/LoginService';
+import { menuList } from '@/services/LoginService'
 
-  export default {
-    data () {
-      return {
-        openeds: [],
-        menuList: []
-      };
-    },
-    mounted () {
-      this.getAsideData();
-    },
-    methods: {
-      getAsideData () {
-        menuList().then(res => {
-          if (!res) return;
-          if (res.code === 0) {
-            this.menuList = res.data.childList;
-          }
-        });
-      }
+export default {
+  data () {
+    return {
+      openeds: [],
+      menuList: []
     }
-  };
+  },
+  mounted () {
+    this.getAsideData()
+  },
+  methods: {
+    getAsideData () {
+      menuList().then(res => {
+        if (!res) return
+        if (res.code === 0) {
+          this.menuList = res.data.childList
+        }
+      })
+    }
+  }
+}
 </script>
 <style lang="scss">
   $blue-color: #6392fe;
