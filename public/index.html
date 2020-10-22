@@ -22,21 +22,15 @@
   <link rel="icon" href="<%= BASE_URL %>favicon.ico">
   <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
-
 <body>
   <!--[if lte IE 9]> <div class="ie8">请使用IE9及以上版本浏览</div> <![endif]-->
   <noscript>
     <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
       Please enable it to continue.</strong>
   </noscript>
-
-  <div class="wrapper">
-    <div id="app"></div>
-    <!--#include virtual="/education/common/cn_footnav.html"-->
-  </div>
-  <!--#include virtual="/education/common/foot_static.html"-->
-  <!--#include virtual="/education/common/stat.html"-->
-  <!--#include file="inc/foot_static.html"-->
+  <!--#include virtual="/special/sp/cn_head_static.html"-->
+  <div id="app"></div>
+  <!--#include virtual="/special/sp/cn_foot_static.html"-->
+  <!--#include virtual="/special/sp/tongji_2013.html"-->
 </body>
-
 </html>
