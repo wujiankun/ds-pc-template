@@ -1,16 +1,6 @@
-const path = require('path')
-const fs = require('fs')
-const chalk = require('chalk')
-const symbols = require('log-symbols')
 const packageObj = require('./package.json')
 const channelName = packageObj.channel
 const project = packageObj.name
-
-const configPath = path.resolve('openID.json')
-if (!fs.existsSync(configPath)) {
-  console.log(symbols.error, chalk.red('没有在项目根目录中找到 openID.json '))
-  return
-}
 const account = require('./openID.json')
 const upPath = `f2e/sales/${account.gitName}/${channelName}/${project}`
 
