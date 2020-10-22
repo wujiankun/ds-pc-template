@@ -5,7 +5,7 @@ const account = require('./openID.json')
 const upPath = `f2e/sales/${account.gitName}/${channelName}/${project}`
 
 module.exports = {
-  entry: ['index.shtml'], // * or an array exp: ['./a.html', './module/b.html', './11/*.html']
+  entry: ['.dist/index.shtml'], // * or an array exp: ['./a.html', './module/b.html', './11/*.html']
   output: {
     cdnPath: 'https://static.ws.126.net/163/',
     clean: true, // whether remove existing file in dist folder, before each building
