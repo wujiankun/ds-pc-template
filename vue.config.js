@@ -9,6 +9,7 @@ module.exports = {
     chainWebpack: config => {
         config.plugin('html').tap(args => {
                 args[0].minify.removeComments = false
+                args[0].minify.collapseWhitespace = false
                 args[0].filename = 'index.shtml'
                 args[0].cmsId = packageObj.cmsId
                 args[0].channel = packageObj.channel
