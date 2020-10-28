@@ -8,8 +8,8 @@ module.exports = {
   entry: ['./dist/index.shtml'], // * or an array exp: ['./a.html', './module/b.html', './11/*.html']
   output: {
     cdnPath: 'https://static.ws.126.net/163/',
-    clean: true, // whether remove existing file in dist folder, before each building
-    dir: { root: 'build' }
+    clean: true // whether remove existing file in dist folder, before each building
+    // dir: { root: 'build' }
   },
   svnRoot: account.svnRoot, // setting svn root dir for compatible with absolute paths of previous projects
   log: true,

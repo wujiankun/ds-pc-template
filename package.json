@@ -5,7 +5,7 @@
   "private": true,
   "author": "wjk",
   "channel": "answers.channel",
-  "cmsId": "answers.cmsId",
+  "cmsId": "00382020ds_cli",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",

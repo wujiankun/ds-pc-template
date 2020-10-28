@@ -4,6 +4,7 @@
  */
 const packageObj = require('./package.json')
 const proxyPath = 'http://***.***.**.com/'
+const cmsConfig = require('./cms.config.js')
 module.exports = {
     // 选项...
     chainWebpack: config => {
@@ -19,7 +20,7 @@ module.exports = {
                 return args
             })
     },
-    publicPath: './',
+    publicPath: cmsConfig.output.cdnPath + cmsConfig.upload.path,
     // 设置代理
     devServer: {
         proxy: {
